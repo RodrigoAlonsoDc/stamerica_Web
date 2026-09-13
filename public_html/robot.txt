@@ -1,0 +1,27 @@
+# Bloquear carpetas sensibles
+User-agent: *
+Disallow: /app/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /logs/
+Disallow: /tests/
+Disallow: /private/
+
+# Bloquear archivos de sistema
+Disallow: *.env
+Disallow: *.ini
+Disallow: *.log
+Disallow: *.sql
+Disallow: *.json
+
+# Permitir acceso público a CSS, JS, imágenes
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /img/
+Allow: /fonts/
+
+# Sitemap si existe
+Sitemap: https://stamerica.com.pe/sitemap.xml

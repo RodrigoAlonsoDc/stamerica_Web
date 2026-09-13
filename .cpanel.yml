@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/stamericacom/public_html/
+    - /bin/cp -R public_html/* $DEPLOYPATH
+    - /bin/cp public_html/.htaccess $DEPLOYPATH

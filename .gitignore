@@ -1,0 +1,17 @@
+# Logs
+error_log
+*/error_log
+*/*/error_log
+*/*/*/error_log
+
+# Copias de seguridad y comprimidos
+public_html/backup/
+*.zip
+*.tar.gz
+*.sql
+
+# Archivos de sistema / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

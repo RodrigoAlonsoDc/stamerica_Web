@@ -1,0 +1,298 @@
+<?php
+$metaTitle = "Venta de Cable N2XOH | ST América";
+$metaDescription = "En ST América ofrecemos servicios especializados en la venta de Cable N2XOH, garantizando soluciones eficientes y seguras para tus proyectos eléctricos.";
+$metaKeywords = "Cable N2XOH, venta de cables eléctricos, soluciones eléctricas, ST América";
+?>
+<?php require 'views/header.php'; ?>
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="<?php echo constant('URL'); ?>inicio">Inicio</a>
+                <a class="breadcrumb-item text-dark" href="<?php echo constant('URL'); ?>venta_suministros">Venta de Suministros</a>
+                <a class="breadcrumb-item text-dark" href="<?php echo constant('URL'); ?>venta_suministros_cables">Venta de Cables Eléctricos</a>
+                <span class="breadcrumb-item active">Venta de Cable N2XOH</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+
+<!-- Shop Detail Start -->
+<div class="container-fluid pb-5">
+    <div class="row px-xl-5">
+        <div class="col-lg-5 mb-30">
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner bg-light">
+                    <div class="carousel-item active">
+                        <img class="w-100 h-100" src="public/img/Suministros/Cables/Para Alonsoooo_Mesa de trabajo 1 copia 29.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 h-100" src="public/img/Suministros/Cables/Para Alonsoooo_Mesa de trabajo 1 copia 29.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 h-100" src="public/img/Suministros/Cables/Para Alonsoooo_Mesa de trabajo 1 copia 29.png" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 h-100" src="public/img/Suministros/Cables/Para Alonsoooo_Mesa de trabajo 1 copia 29.png" alt="Image">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                    <i class="fa fa-2x fa-angle-left text-dark"></i>
+                </a>
+                <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                    <i class="fa fa-2x fa-angle-right text-dark"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-7 h-auto mb-30">
+            <div class="h-100 bg-light p-30">
+                <h1>Cable N2XOH </h1>
+                <div class="d-flex mb-3">
+                    <div class="text-primary mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                    </div>
+                </div>
+                <!-- <h3 class="font-weight-semi-bold mb-4">S/70.00</h3> -->
+                <p class="mb-4">El cable tiene excelentes propiedades eléctricas. El aislamiento de polietileno reticulado permite mayor capacidad de corriente en cualquier condición.</p>
+                <ul>
+                    <li>✅Cotización gratis</li>
+                    <li>✅Precios negociables</li>
+                    <li>✅Manual de uso</li>
+                    <li>✅Transporte</li>
+                    <li>✅Confiabilidad</li>
+                </ul>
+                <div class="d-flex mb-3">
+                    <strong class="text-dark mr-3">CALIBRE:</strong>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="custom-control-label" for="size-1">Desde 4 mm2 hasta 500 mm2</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex mb-3">
+                    <strong class="text-dark mr-3">MARCACIÓN:</strong>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="custom-control-label" for="size-1">FREETOX N2XOH 0.6/1 kV 3-1x Sección</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex mb-3">
+                    <strong class="text-dark mr-3">EMBALAJE:</strong>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label class="custom-control-label" for="size-1">En carretes de madera no retornables</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center mb-4 pt-2">
+
+                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> <a title="Click para chatear" href="https://api.whatsapp.com/send?phone=+51941683636&text=Hola.%20Me%20gustaría%20adquirir%20el%20siguiente%20cable:%20Cable+N2XOH" target="_blank" rel="noopener">Adquirir Producto</a></button>
+                </div>
+                <div class="d-flex pt-2">
+                    <strong class="text-dark mr-2">Encuentranos en:</strong>
+                    <div class="d-inline-flex">
+                        <a class="text-dark px-2" href="https://www.facebook.com/profile.php?id=100090141630434" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="https://www.instagram.com/stamerica.oficial/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-dark px-2" href="https://www.tiktok.com/@stamerica_oficial?is_from_webapp=1&sender_device=pc" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row px-xl-5">
+            <div class="col">
+                <div class="bg-light p-30">
+                    <div class="nav nav-tabs mb-4">
+                        <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Descripción</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Información</a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <h4 class="mb-3">Descripción del Producto</h4>
+                            <p>Las tronzadoras son herramientas de mano, equipadas con un pequeño y potente motor y un disco de corte, lo que las hace, las opciones ideales para realizar cortes de forma fácil, ligera y cómoda, en materiales muy resistentes, así como: Acero, asfalto, piedra, hierro, ladrillo, hormigón, entre otros elementos.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <h4 class="mb-3">Información Adicional</h4>
+                            <p>A</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0">
+                                        MARCA: STANLEY
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        MODELO D28730
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        ANCHO DEL  PRODUCTO 33 cm
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        COLOR AMARILLO            
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        VELOCIDAD SIN CARGA 4000 Rpm
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        DIÁMETRO  INTERNO 1 "
+                                        </li>
+                                      </ul> 
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush"> 
+                                        <li class="list-group-item px-0">
+                                        TIEMPO DE USO 6 a 8 h
+                                        </li>  
+                                        <li class="list-group-item px-0">
+                                        PORTENCIA 200W
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        TRONZADORA
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        DISCO
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                        EXTENSION
+                                        </li>
+                                      </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+</div>
+<!-- Shop Detail End -->
+
+<!-- Products Start -->
+<div class="container-fluid py-5">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Equipos Relacionados</span></h2>
+    <div class="row col-md-12 px-xl-5">
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="product-item bg-light mb-4">
+                <div class="product-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="public/img/EquiposAlquiler/Construccion/Apisonadora.png" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <a class="h6 text-decoration-none text-truncate" href="">APISONADORA 9.5HP</a>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h5>$123.00</h5>
+                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small>(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="product-item bg-light mb-4">
+                <div class="product-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="public/img/EquiposAlquiler/Medicion/Cámara termográfica Ti10.png" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <a class="h6 text-decoration-none text-truncate" href="">CÁMARA TERMOGRÁFICA</a>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h5>$123.00</h5>
+                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                        <small>(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="product-item bg-light mb-4">
+                <div class="product-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="public/img/EquiposAlquiler/Seguridad/Escalera 6 pasos.png" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <a class="h6 text-decoration-none text-truncate" href="">ESCALERA TIJERA DE 6 PASOS</a>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h5>$123.00</h5>
+                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                        <small class="far fa-star text-primary mr-1"></small>
+                        <small>(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+            <div class="product-item bg-light mb-4">
+                <div class="product-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="public/img/EquiposAlquiler/Construccion/Compresora.png" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <a class="h6 text-decoration-none text-truncate" href="">COMPRESORA 50 LTS</a>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h5>$123.00</h5>
+                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="far fa-star text-primary mr-1"></small>
+                        <small class="far fa-star text-primary mr-1"></small>
+                        <small>(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Products End -->
+
+
+<?php require 'views/footer.php'; ?>
