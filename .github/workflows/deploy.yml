@@ -10,14 +10,27 @@ jobs:
     name: Actualizar y Desplegar en cPanel
     runs-on: ubuntu-latest
     steps:
-      - name: Actualizar repositorio en cPanel (Git Pull)
+      - name: Actualizar y Desplegar
         run: |
-          response=$(curl -s -k -H "Authorization: cpanel stamericacom:${{ secrets.CPANEL_API_TOKEN }}" \
-            "https://node-lake956.grupoabhost.net:2083/execute/VersionControl/update?repository_root=/home/stamericacom/repositories/stamerica_Web")
-          echo "RESPUESTA UPDATE: $response"
+          echo "=== 1. EJECUTANDO UPDATE ==="
+          resp_update=$(curl -s -k -H "Authorization: cpanel stamericacom:${{ secrets.CPANEL_API_TOKEN }}" \
+            "https://node-lake956.grupoabhost.net:2083/execute/VersionControl/update" \
+            --data-urlencode "repository_root=/home/stamericacom/repositories/stamerica_Web" \
+            --data-urlencode "branch=main")
+          echo "Respuesta Update: $resp_update"
 
-      - name: Desplegar cambios a public_html (.cpanel.yml)
-        run: |
-          response=$(curl -s -k -H "Authorization: cpanel stamericacom:${{ secrets.CPANEL_API_TOKEN }}" \
-            "https://node-lake956.grupoabhost.net:2083/execute/VersionControlDeployment/create?repository_root=/home/stamericacom/repositories/stamerica_Web")
-          echo "RESPUESTA DEPLOY: $response"
+          echo "=== 2. EJECUTANDO DEPLOY ==="
+          resp_deploy=$(curl -s -k -H "Authorization: cpanel stamericacom:${{ secrets.CPANEL_API_TOKEN }}" \
+            "https://node-lake956.grupoabhost.net:2083/execute/VersionControlDeployment/create" \
+            --data-urlencode "repository_root=/home/stamericacom/repositories/stamerica_Web")
+          echo "Respuesta Deploy: $resp_deploy"
+
+          echo "### Resultado Despliegue cPanel" >> $GITHUB_STEP_SUMMARY
+          echo "#### Update:" >> $GITHUB_STEP_SUMMARY
+          echo "```json" >> $GITHUB_STEP_SUMMARY
+          echo "$resp_update" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo "#### Deploy:" >> $GITHUB_STEP_SUMMARY
+          echo "```json" >> $GITHUB_STEP_SUMMARY
+          echo "$resp_deploy" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
