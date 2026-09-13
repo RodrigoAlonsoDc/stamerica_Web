@@ -1,4 +1,4 @@
-<style>
+﻿<style>
     .redes {
         background-color: #4156a5;
         color: white;
@@ -19,7 +19,7 @@
                 <img src="public/img/Logos/Soluciones Tecnicas America (6).png" alt="LogoStAmerica" title="ST América - Soluciones Técnicas" style=" width: 210px;">
             </a>
             <br><br>
-            <p class="mb-4">Somos su mejor opción a la hora de elegir un proveedor de equipos de medición, equipos de construcción y equipos de seguridad. [Despliegue automático con GitHub Activo]</p>
+            <p class="mb-4">Somos su mejor opción a la hora de elegir un proveedor de equipos de medición, equipos de construcción y equipos de seguridad. [Despliegue automático 100% Activo - RodrigoAlonsoDc]</p>
             <p class="mb-2"><i class="fa fa-map-marker-alt mr-3" style="color: #4156a5;"></i>Pj.San Hilarion Alto Mz. B Lote 16 - San Juan de Lurigancho</p>
             <p class="mb-2"><i class="fa fa-envelope mr-3" style="color: #4156a5;"></i> proyectos@stamerica.com.pe</p>
             <p class="mb-0"><i class="fa fa-phone-alt mr-3" style="color: #4156a5;"></i>+51 941 683 636</p>
