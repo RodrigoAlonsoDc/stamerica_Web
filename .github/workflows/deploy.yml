@@ -1,4 +1,4 @@
-name: Despliegue Automático a cPanel
+﻿name: Despliegue Automatico a cPanel
 
 on:
   push:
