@@ -10,7 +10,7 @@ require 'views/header.php';
 <style>
     /* Tipografía y Hero */
     .hero-section {
-        background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 41, 59, 0.88) 50%, rgba(65, 86, 165, 0.7) 100%), 
+        background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), 
                     url('public/img/Servicios/Electricidad/PORTADA-STAMERICA-sin-texto-2.jpg') center center / cover no-repeat;
         min-height: 560px;
         display: flex;
@@ -22,7 +22,7 @@ require 'views/header.php';
     .hero-title {
         font-size: 2.6rem;
         font-weight: 800;
-        line-height: 1.2;
+        line-height: 1.25;
         letter-spacing: -0.5px;
         color: #ffffff;
         margin-bottom: 1.25rem;
@@ -41,7 +41,7 @@ require 'views/header.php';
     .hero-lead {
         font-size: 1.1rem;
         line-height: 1.6;
-        color: #e2e8f0;
+        color: #f1f5f9;
         margin-bottom: 2rem;
         max-width: 650px;
     }
@@ -49,9 +49,8 @@ require 'views/header.php';
     .hero-badge {
         display: inline-flex;
         align-items: center;
-        background: rgba(255, 255, 255, 0.12);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         padding: 6px 16px;
         border-radius: 50px;
         margin-bottom: 1.5rem;
@@ -79,9 +78,8 @@ require 'views/header.php';
     }
 
     .btn-hero-outline {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(8px);
-        border: 1.5px solid rgba(255, 255, 255, 0.5);
+        background: rgba(0, 0, 0, 0.45);
+        border: 1.5px solid rgba(255, 255, 255, 0.6);
         color: #ffffff !important;
         font-weight: 600;
         padding: 12px 26px;
@@ -101,13 +99,12 @@ require 'views/header.php';
 
     /* Trust Card Hero */
     .hero-trust-box {
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
         padding: 24px;
         color: #ffffff;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     }
 
     .trust-item {
@@ -121,8 +118,8 @@ require 'views/header.php';
     .trust-icon {
         width: 42px;
         height: 42px;
-        border-radius: 12px;
-        background: rgba(65, 86, 165, 0.6);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
         align-items: center;
@@ -217,7 +214,7 @@ require 'views/header.php';
                 </div>
                 
                 <h1 class="hero-title">
-                    Soluciones Técnicas América: <span style="color: #59e3ff;">Ingeniería Eléctrica</span> en Media y Alta Tensión
+                    Soluciones Técnicas América: Ingeniería Eléctrica en Media y Alta Tensión
                 </h1>
                 
                 <p class="hero-lead">
@@ -250,7 +247,7 @@ require 'views/header.php';
                     </div>
 
                     <div class="trust-item">
-                        <div class="trust-icon" style="color: #59e3ff;"><i class="fas fa-truck-moving"></i></div>
+                        <div class="trust-icon text-warning"><i class="fas fa-truck-moving"></i></div>
                         <div>
                             <div class="font-weight-bold text-white">Planta Móvil de Termovacío</div>
                             <small class="text-light" style="opacity: 0.85;">Tratamiento in situ de transformadores de potencia sin interrumpir su operación.</small>
