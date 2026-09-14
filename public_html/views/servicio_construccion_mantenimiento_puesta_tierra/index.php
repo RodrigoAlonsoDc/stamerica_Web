@@ -1,97 +1,119 @@
 <?php
-$metaTitle = "Servicios de Construcción y Mantenimiento | ST América";
-$metaDescription = "Conoce nuestros servicios de construcción y mantenimiento en ST América, donde ofrecemos soluciones integrales en ingeniería eléctrica.";
-$metaKeywords = "servicios de construcción, mantenimiento eléctrico, soluciones eléctricas, puesta a tierra";
+$metaTitle = "Pozo a Tierra: Instalación, Medición y Certificado | Lima";
+$metaDescription = "Instalación, mantenimiento y medición de pozo a tierra con telurómetro. Entregamos certificado y protocolo según el CNE. Lima y provincias.";
+$metaImage = "https://stamerica.com.pe/public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png";
+
+$schemaServiceJsonLd = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Service",
+  "serviceType" => "Instalación y mantenimiento de pozo a tierra",
+  "name" => "Sistema de Puesta a Tierra: Instalación, Mantenimiento y Medición",
+  "description" => "Instalación de pozos a tierra verticales y horizontales, medición con telurómetro calibrado y emisión de protocolo y certificado de pozo a tierra firmado por ingeniero colegiado.",
+  "provider" => [
+    "@type" => "ElectricalContractor",
+    "name" => "ST América S.R.L."
+  ],
+  "areaServed" => [
+    ["@type" => "City", "name" => "Lima"],
+    ["@type" => "Country", "name" => "Perú"]
+  ],
+  "url" => "https://stamerica.com.pe/servicio_construccion_mantenimiento_puesta_tierra",
+  "hasOfferCatalog" => [
+    "@type" => "OfferCatalog",
+    "name" => "Servicios de puesta a tierra",
+    "itemListElement" => [
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Instalación y construcción de pozo a tierra vertical y horizontal"]],
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Mantenimiento y reactivación química de pozos a tierra con bentonita y gel conductivo"]],
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Medición de telurómetro y emisión de certificado de operatividad INDECI"]]
+    ]
+  ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 ?>
 
 <?php require 'views/header.php'; ?>
+
+<!-- Portada Inicio -->
 <section style="background-color: white;">
-    <div class="container-fluid bg-registration " style="margin: 0px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png), no-repeat center center;
-    background-size: cover;">
+    <div class="container-fluid bg-registration" style="margin: 0px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png), no-repeat center center; background-size: cover;">
         <div class="container py-5" style="padding-top: 8rem !important;">
             <div class="row">
                 <div class="col-lg-12 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h6 class="text-white text-uppercase" style="letter-spacing: 5px;">Soluciones Técnicas América</h6>
-                        <h1 class="text-white">Construcción y Mantenimiento de Puesta a Tierra</h1>
+                        <p class="text-white text-uppercase" style="letter-spacing: 5px;">Soluciones Técnicas América</p>
+                        <h1 class="text-white">Sistema de Puesta a Tierra: Instalación, Mantenimiento y Medición</h1>
                     </div>
-                </div>
-                <div class="col-lg-0">
                 </div>
             </div>
         </div>
     </div>
+    <!-- Portada Fin -->
+
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-7 mb-5">
-                <h4 class="font-weight-bold" style="color: #4156a5;">Construcción y Mantenimiento de Puesta a Tierra</h4>
-                <div class="row mt-5">
+                <h2 class="font-weight-bold" style="color: #4156a5;">Instalación de Pozo a Tierra en Lima y Provincias</h2>
+                <div class="row mt-4">
                     <div class="col-6">
-                        <img src="public/img/Servicios/Electricidad/Puesta-Tierra.webp" alt="Subestación 1" class="img-fluid rounded">
+                        <img src="public/img/Servicios/Electricidad/Puesta-Tierra.webp"
+                            alt="Construcción e instalación de pozo a tierra vertical con tierra de chacra y cemento conductivo en Lima"
+                            class="img-fluid rounded"
+                            width="400" height="300"
+                            loading="lazy" decoding="async">
                     </div>
                     <div class="col-6">
-                        <img src="public/img/Servicios/puesta_tierra.jpg" alt="Subestación 2" class="img-fluid rounded">
+                        <img src="public/img/Servicios/puesta_tierra.jpg"
+                            alt="Medición de resistencia óhmica de pozo a tierra con telurómetro digital calibrado por ST América"
+                            class="img-fluid rounded"
+                            width="400" height="300"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
                 <br>
-                <p>Un pozo a tierra, también conocido como sistema de puesta a tierra, es una instalación eléctrica
-                    diseñada para proporcionar un camino seguro y eficiente para disipar corrientes eléctricas no
-                    deseadas hacia la tierra. Su propósito principal es garantizar la seguridad de las personas,
-                    equipos y estructuras al proporcionar un medio de descarga controlada de corrientes eléctricas.
-                    <br><br>
-                    Los pozos a tierra son esenciales para garantizar la seguridad de las instalaciones eléctricas y
-                    deben ser inspeccionados y mantenidos regularmente para asegurar su eficacia.
-                </p>
-                <h5 style="color: #4156a5;">¿Como se Realiza la construcción de una Puesta a Tierra?</h5>
-                <p>
-                    La construcción de un sistema de puesta a tierra implica la instalación de diversos componentes diseñados para proporcionar
-                    un camino seguro y eficiente para disipar corrientes eléctricas hacia la tierra, esta puede ser construido con aditivos quimicos,
-                    como son Thorgel, tierragel y/o cemento conductivo, dentro de los servicios de <strong style="color: #4156a5;">SOLUCIONES TÉCNICAS AMÉRICA</strong> los pozos a tierra pueden
-                    ser construidos de la siguiente manera:
-                </p>
-                <ul style="padding-left: 0%;">
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Construcción o Instalación de Pozos a Tierra Verticales</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Construcción o Instalación de Pozos a Tierra Horizontales</li>
+                <p>Un pozo a tierra o sistema de puesta a tierra es una instalación de seguridad eléctrica indispensable para derivar fallas y descargas atmosféricas directamente a tierra. Protege la vida de las personas contra tensiones de contacto y resguarda equipos sensibles, servidores y maquinaria industrial de sobretensiones transitorias.</p>
+                <p>En <strong>SOLUCIONES TÉCNICAS AMÉRICA</strong> diseñamos y construimos pozos a tierra verticales y horizontales empleando electrodos de cobre electrolítico, cemento conductivo y dosis químicas de gel de alta dispersión (Thor-Gel / Tierra-Gel), asegurando bajísima resistencia y durabilidad extendida.</p>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Mantenimiento y Recuperación de Pozos a Tierra Existentes</h2>
+                <p>Con el paso del tiempo, la sequedad del terreno y la corrosión aumentan la resistencia eléctrica del pozo, superando los límites permitidos. Nuestro servicio de mantenimiento incluye:</p>
+                <ul style="padding-left: 0%; list-style: none;">
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> Limpieza profunda de la caja de registro y desoxidación de la varilla de cobre y conector tipo AB.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> Aplicación y reactivación con sales minerales y dosis química electrolítica / gel conductivo.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> Verificación de continuidad en conductores de enlace equipotencial y barra de tierra en <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_tableros_electricos" style="color: #4156a5; font-weight: 500;">tableros eléctricos</a>.</li>
                 </ul>
-                <p>
-                    Luego de Realizado la Construcción del pozo a tierra, realizamos las siguientes actividades:
-                </p>
-                <ul style="padding-left: 0%;">
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Conexión a Equipos y Estructuras</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Medición de Resistencia a Tierra</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Pruebas y Verificación</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Protocolo y Certificación</li>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Medición de Resistencia con Telurómetro y Certificado Firmado</h2>
+                <p>Efectuamos la medición de resistencia con telurómetro digital con certificado de calibración vigente (método de caída de potencial de 3 hilos o pinza telurópica). Entregamos el <strong>Protocolo de Prueba y Certificado de Operatividad de Pozo a Tierra</strong> firmado por Ingeniero Electricista / Electromecánico colegiado y habilitado (CIP), indispensable para inspecciones de <strong>Defensa Civil (ITSE / INDECI)</strong>, licencias municipales de funcionamiento y pólizas de seguro.</p>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Preguntas Frecuentes sobre Pozo a Tierra y Certificación</h2>
+                <h3 style="color: #4156a5; font-size: 1.15rem;">¿Cuál es el valor de resistencia exigido por el Código Nacional de Electricidad (CNE)?</h3>
+                <p>Según la regla 060-712 del CNE (Suministro y Utilización):</p>
+                <ul style="padding-left: 0%; list-style: none;">
+                    <li><i class="fas fa-bolt mr-2" style="color: #4156a5;"></i> <strong>Instalaciones comerciales, residenciales e industriales en baja tensión:</strong> Menor o igual a <strong>25 Ohmios (Ω)</strong>.</li>
+                    <li><i class="fas fa-bolt mr-2" style="color: #4156a5;"></i> <strong>Sistemas de protección contra descargas atmosféricas (pararrayos) y subestaciones:</strong> Menor o igual a <strong>15 Ohmios (Ω)</strong> o 10 Ω.</li>
+                    <li><i class="fas fa-bolt mr-2" style="color: #4156a5;"></i> <strong>Centros de datos, cómputo y equipos médicos sensibles:</strong> Menor o igual a <strong>5 Ohmios (Ω)</strong>.</li>
                 </ul>
-                <h5 style="color: #4156a5;">Mantenimiento de Puesta a Tierra</h5>
-                <p>
-                    El mantenimiento de un sistema de puesta a tierra es esencial para garantizar su eficacia y seguridad a lo largo
-                    del tiempo. Aquí hay algunos pasos comunes que se pueden seguir en el mantenimiento de un sistema de puesta a tierra:
-                </p>
-                <ul style="padding-left: 0%;">
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Inspección Visual</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Medición de Resistencia a Tierra</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Aplicación de Dosis química, thorGel, tierra gel</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Reparación de Daños</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Revisión de Equipos Conectados</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Pruebas de Continuidad</li>
-                    <li><i class="fas fa-tools" style="color: #4156a5;"></i> Protocolo y Certificación</li>
-                </ul>
+
+                <h3 style="color: #4156a5; font-size: 1.15rem;">¿Con qué frecuencia debe renovarse el certificado de pozo a tierra?</h3>
+                <p>Las municipalidades y Defensa Civil (INDECI) exigen la renovación del protocolo de medición de pozo a tierra con una <strong>vigencia máxima de 1 año (12 meses)</strong>.</p>
             </div>
+
             <div class="col-lg-5">
                 <br><br>
-                <div class="bg-light shadow rounded overflow-hidden">
+                <div class="bg-light shadow rounded overflow-hidden sticky-top" style="top: 100px;">
                     <div class="bg-white text-center p-3">
-                        <h2 class="m-0" style="color: #4156a5;"><b>Cotiza tu Proyecto</b></h2>
+                        <h3 class="m-0" style="color: #4156a5;"><b>Cotiza tu Proyecto</b></h3>
                     </div>
                     <div class="p-4">
-                        <form>
+                        <form action="https://formsubmit.co/ventas@stamerica.com.pe" method="POST">
                             <div class="form-group">
-                                <input id="nombres" type="text" class="form-control" placeholder="Ingrese Nombre / Razón Social">
+                                <input id="nombres" name="nombre" type="text" class="form-control" placeholder="Ingrese Nombre / Razón Social" required>
                             </div>
                             <div class="form-group">
-                                <textarea id="apellidos" class="form-control" placeholder="Solicita tu Servicio.." style="width: 100%; height: 200px; resize: none;"></textarea>
+                                <textarea id="apellidos" name="mensaje" class="form-control" placeholder="Solicita tu pozo a tierra nuevo, mantenimiento o certificado INDECI..." style="width: 100%; height: 180px; resize: none;" required></textarea>
                             </div>
-                            <button type="submit" id="send" class="btn btn-block" style="background-color: #4156a5; color: white;">Enviar</button>
+                            <button type="submit" id="send" class="btn btn-block" style="background-color: #4156a5; color: white;">Solicitar Cotización</button>
                         </form>
                     </div>
                 </div>
@@ -99,4 +121,5 @@ $metaKeywords = "servicios de construcción, mantenimiento eléctrico, solucione
         </div>
     </div>
 </section>
+
 <?php require 'views/footer.php'; ?>

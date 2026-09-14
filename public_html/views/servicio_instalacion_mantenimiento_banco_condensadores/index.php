@@ -1,137 +1,118 @@
 <?php
-$metaTitle = "Servicios de Instalación y Mantenimiento de Banco de Condensadores | ST América";
-$metaDescription = "En ST América ofrecemos servicios especializados en instalación y mantenimiento de bancos de condensadores para mejorar la eficiencia energética.";
-$metaKeywords = "instalación de banco de condensadores, mantenimiento de banco de condensadores, soluciones eléctricas, ST América";
+$metaTitle = "Banco de Condensadores: Instalación y Mantenimiento | Perú";
+$metaDescription = "Instalamos y mantenemos bancos de condensadores para corregir el factor de potencia y evitar recargos en tu recibo eléctrico. Lima y provincias.";
+$metaImage = "https://stamerica.com.pe/public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png";
+
+$schemaServiceJsonLd = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Service",
+  "serviceType" => "Instalación y mantenimiento de banco de condensadores",
+  "name" => "Instalación y Mantenimiento de Banco de Condensadores",
+  "description" => "Diseño, dimensionamiento, montaje y mantenimiento de bancos de condensadores automáticos y fijos para corrección del factor de potencia y eliminación de recargos por energía reactiva.",
+  "provider" => [
+    "@type" => "ElectricalContractor",
+    "name" => "ST América S.R.L."
+  ],
+  "areaServed" => [
+    ["@type" => "City", "name" => "Lima"],
+    ["@type" => "Country", "name" => "Perú"]
+  ],
+  "url" => "https://stamerica.com.pe/servicio_instalacion_mantenimiento_banco_condensadores",
+  "hasOfferCatalog" => [
+    "@type" => "OfferCatalog",
+    "name" => "Servicios de bancos de condensadores",
+    "itemListElement" => [
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Dimensionamiento y montaje de banco de condensadores automático"]],
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Mantenimiento preventivo y correctivo de condensadores y reguladores"]],
+      ["@type" => "Offer", "itemOffered" => ["@type" => "Service", "name" => "Estudio de calidad de energía y compensación de reactivos"]]
+    ]
+  ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 ?>
+
 <?php require 'views/header.php'; ?>
 
-
-
+<!-- Portada Inicio -->
 <section style="background-color: white;">
-    <div class="container-fluid bg-registration " style="margin: 0px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png), no-repeat center center;
-    background-size: cover;">
+    <div class="container-fluid bg-registration" style="margin: 0px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public/img/Servicios/Electricidad/Portada_Mantenimiento_Subestaciones.png), no-repeat center center; background-size: cover;">
         <div class="container py-5" style="padding-top: 8rem !important;">
             <div class="row">
                 <div class="col-lg-12 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h6 class="text-white text-uppercase" style="letter-spacing: 5px;">Soluciones Técnicas América</h6>
+                        <p class="text-white text-uppercase" style="letter-spacing: 5px;">Soluciones Técnicas América</p>
                         <h1 class="text-white">Instalación y Mantenimiento de Banco de Condensadores</h1>
                     </div>
-                </div>
-                <div class="col-lg-0">
                 </div>
             </div>
         </div>
     </div>
+    <!-- Portada Fin -->
+
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-7 mb-5">
-                <h4 class="font-weight-bold" style="color: #4156a5;">Instalación y Mantenimiento de Banco de Condensadores</h4>
-                <div class="row mt-5">
+                <h2 class="font-weight-bold" style="color: #4156a5;">Corrección del Factor de Potencia y Ahorro en el Recibo de Luz</h2>
+                <div class="row mt-4">
                     <div class="col-6">
-                        <img src="public/img/Servicios/Electricidad/Medicion_de_Aislamiento.png" alt="" class="img-fluid rounded">
+                        <img src="public/img/Servicios/Electricidad/Medicion_de_Aislamiento.png"
+                            alt="Medición de capacitancia y revisión de celdas en banco de condensadores en Lima"
+                            class="img-fluid rounded"
+                            width="400" height="300"
+                            loading="lazy" decoding="async">
                     </div>
                     <div class="col-6">
-                        <img src="public/img/Servicios/Electricidad/analisis_pruebas_electricas1.webp" alt="" class="img-fluid rounded">
+                        <img src="public/img/Servicios/Electricidad/analisis_pruebas_electricas1.webp"
+                            alt="Mantenimiento preventivo y termografía de banco de condensadores industrial ST América"
+                            class="img-fluid rounded"
+                            width="400" height="300"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
                 <br>
-                <p>
-                    En la industria, una de las mayores penalizaciones en la factura eléctrica se debe a la energía reactiva.
-                    La instalación de bancos de capacitores nos ayuda a corregir el factor de potencia evitando cargos extras
-                    en nuestra factura energia electrica.
-                </p>
-                <p>
-                    Por ello, realizamos servicio de "Instalación y Mantenimiento de Banco de Condensadores"
-                    Para ello es importante haber realizado un estudio de calidad de energia, puesto que los
-                    bancos de capacitores son muy sensibles a los eventos o pertubaciones del sistema electrico
-                    , pricipalmente los armonicos y transitorios.
-                </p>
-                <h5 style="color: #4156a5;">Mantenimiento de Banco de Condensadores</h5>
-                <h6 style="color: #4156a5;">¿Cuales son los Pasos para el Mantenimiento de Banco de Condensadores?</h6>
-                <h6 style="color: #4156a5;">1 - Inspección Visual</h6>
-                <p>
-                    Realiza una inspección visual para identificar cualquier daño, como corrosión, sobrecalentamiento
-                    y deformación de los condensadores y/o capacitores, regulador de factor de potencia.
-                </p>
-                <h6 style="color: #4156a5;">1 - Inspección Visual</h6>
-                <p>
-                    Realiza una inspección visual para identificar cualquier daño, como corrosión, sobrecalentamiento
-                    y deformación de los condensadores y/o capacitores, regulador de factor de potencia.
-                </p>
-                <h6 style="color: #4156a5;">2 - Limpieza</h6>
-                <p>
-                    Limpia las unidades de condensadores y sus alrededores para eliminar el polvo,
-                    la suciedad o cualquier otro contaminante que pueda afectar el rendimiento.
-                </p>
-                <h6 style="color: #4156a5;">3 - Verificación de Conexiones Eléctricas</h6>
-                <p>
-                    Inspecciona todas las conexiones eléctricas, incluidos los cables y las conexiones
-                    del interruptor, para asegurarte de que estén limpias y ajustadas.
-                </p>
-                <h6 style="color: #4156a5;">4 - Mediciones y Pruebas</h6>
-                <p>
-                    Realiza mediciones de capacitancia, resistencia y voltaje para asegurarte de
-                    que cada condensador esté dentro de los límites especificados. También, realiza
-                    pruebas de pérdida dieléctrica si es necesario.
-                </p>
-                <h6 style="color: #4156a5;">5 - Reemplazo de Condensadores Defectuosos</h6>
-                <p>
-                    Si se encuentran condensadores defectuosos durante las pruebas, reemplázalos con unidades nuevas y de igual capacidad.
-                </p>
-                <h6 style="color: #4156a5;">6 - Reapriete de Tornillos y Conexiones</h6>
-                <p>
-                    Verifica y aprieta los tornillos y conexiones según sea necesario para prevenir problemas de conexión y pérdida de energía.
-                </p>
-                <h6 style="color: #4156a5;">7 - Verificación de Fusibles y Dispositivos de Protección</h6>
-                <p>
-                    Verifica que los fusibles y otros dispositivos de protección estén en buen estado y funcionando correctamente.
-                </p>
-                <h6 style="color: #4156a5;">8 - Inspección del Sistema de Refrigeración</h6>
-                <p>
-                    Si el banco de condensadores tiene un sistema de refrigeración, verifica el estado de los ventiladores,
-                    los radiadores y otros componentes del sistema.
-                </p>
-                <h6 style="color: #4156a5;">9 - Calibración de Equipos de Medición</h6>
-                <p>
-                    Calibra los equipos de medición utilizados durante el mantenimiento para garantizar mediciones precisas.
-                </p>
-                <h6 style="color: #4156a5;">10 - Documentación</h6>
-                <p>
-                    Actualiza la documentación del banco de condensadores, incluyendo cualquier cambio realizado,
-                    los resultados de las pruebas y cualquier acción correctiva tomada.
-                </p>
-                <h6 style="color: #4156a5;">11 - Programación de Mantenimiento Preventivo</h6>
-                <p>
-                    Establece un programa de mantenimiento preventivo regular para garantizar que el banco de condensadores
-                    se mantenga en condiciones óptimas a lo largo del tiempo.
-                </p>
+                <p>En el sector comercial e industrial peruano, uno de los mayores sobrecostos en la facturación eléctrica se debe a la <strong>penalización por consumo de energía reactiva (kVARh)</strong> cuando el factor de potencia cae por debajo de <strong>0.96</strong> según la normativa de OSINERGMIN.</p>
+                <p>La instalación de un <strong>banco de condensadores automático</strong> compensa la energía reactiva demandada por motores, transformadores y cargas inductivas, elevando el factor de potencia a valores óptimos (0.98 – 1.00), eliminando de inmediato los recargos en el recibo y liberando capacidad de carga en sus <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_tableros_electricos" style="color: #4156a5; font-weight: 500;">tableros eléctricos</a> y transformadores.</p>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Dimensionamiento del Banco de Condensadores (kVAR)</h2>
+                <p>Para determinar la potencia reactiva exacta requerida, realizamos un <a href="<?php echo constant('URL'); ?>servicio_estudio_calidad_energia" style="color: #4156a5; font-weight: 500;">estudio de calidad de energía</a> con analizador de redes de clase A. Esto permite medir la distorsión armónica total (THD) y dimensionar el banco con o sin reactancias de rechazo (desintonizadas) para evitar resonancias peligrosas.</p>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Mantenimiento de Bancos de Condensadores Automáticos y Fijos</h2>
+                <p>El protocolo de mantenimiento preventivo de ST América incluye:</p>
+                <ul style="padding-left: 0%; list-style: none;">
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> <strong>Inspección visual y termográfica:</strong> Detección de celdas hinchadas, fugas dieléctricas o calentamiento en bornes.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> <strong>Medición de capacitancia:</strong> Verificación de microfaradios (µF) por paso para descartar celdas degradadas.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> <strong>Revisión de contactores y contactores especiales:</strong> Verificación de resistencias de preinserción contra picos de corriente.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> <strong>Configuración del regulador automático de factor de potencia:</strong> Ajuste de cos φ objetivo, tiempos de retardo y secuencia de pasos.</li>
+                    <li><i class="fas fa-check mr-2" style="color: #4156a5;"></i> Limpieza con solvente dieléctrico y reajuste de torque en todas las conexiones.</li>
+                </ul>
+
+                <br>
+                <h2 class="font-weight-bold" style="color: #4156a5;">Atención en Lima y Provincias del Perú</h2>
+                <p>Brindamos asesoría técnica, suministro, montaje y mantenimiento correctivo de emergencia en plantas industriales, edificios corporativos y centros comerciales en Lima y provincias del Perú.</p>
             </div>
+
             <div class="col-lg-5">
                 <br><br>
-                <div class="bg-light shadow rounded overflow-hidden">
+                <div class="bg-light shadow rounded overflow-hidden sticky-top" style="top: 100px;">
                     <div class="bg-white text-center p-3">
-                        <h2 class="m-0" style="color: #4156a5;"><b>Cotiza tu Proyecto</b></h2>
+                        <h3 class="m-0" style="color: #4156a5;"><b>Cotiza tu Proyecto</b></h3>
                     </div>
                     <div class="p-4">
-                        <form>
+                        <form action="https://formsubmit.co/ventas@stamerica.com.pe" method="POST">
                             <div class="form-group">
-                                <input id="nombres" type="text" class="form-control" placeholder="Ingrese Nombre / Razón Social">
+                                <input id="nombres" name="nombre" type="text" class="form-control" placeholder="Ingrese Nombre / Razón Social" required>
                             </div>
                             <div class="form-group">
-                                <textarea id="apellidos" class="form-control" placeholder="Solicita tu Servicio.." style="width: 100%; height: 200px; resize: none;"></textarea>
+                                <textarea id="apellidos" name="mensaje" class="form-control" placeholder="Indica recargo en tu recibo, potencia o requerimiento de banco de condensadores..." style="width: 100%; height: 180px; resize: none;" required></textarea>
                             </div>
-                            <button type="submit" id="send" class="btn btn-block" style="background-color: #4156a5; color: white;">Enviar</button>
+                            <button type="submit" id="send" class="btn btn-block" style="background-color: #4156a5; color: white;">Solicitar Cotización</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <h2 style="width: 100%; color:#4156a5">¡Atención en Lima y Provincias del Perú!</h2>
-        </div>
     </div>
 </section>
-
 
 <?php require 'views/footer.php'; ?>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Inicio -->
+  <url>
+    <loc>https://stamerica.com.pe/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Hub de Servicios Principales -->
+  <url>
+    <loc>https://stamerica.com.pe/servicios_stamerica</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Las 7 Páginas de Servicios de Ingeniería Eléctrica -->
+  <url>
+    <loc>https://stamerica.com.pe/servicio_mantenimiento_subestaciones_electricas</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_tratamiento_aceite_dielectrico</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_diseno_construccion_subestaciones_electricas</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_construccion_mantenimiento_puesta_tierra</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_instalacion_mantenimiento_tableros_electricos</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_instalacion_mantenimiento_banco_condensadores</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_analisis_pruebas_electricas</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Otros Servicios Eléctricos y Especializados -->
+  <url>
+    <loc>https://stamerica.com.pe/servicio_estudio_calidad_energia</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_tendido_redes_electricas</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_pintado_industrial</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_construcciones_metalicas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/servicio_construccion_drywall</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Páginas Institucionales -->
+  <url>
+    <loc>https://stamerica.com.pe/proyectos_realizados</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/nosotros_stamerica</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/contactanos_STAmerica</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/blog_informativo</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Alquiler y Venta -->
+  <url>
+    <loc>https://stamerica.com.pe/equipos_en_alquiler</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://stamerica.com.pe/venta_suministros</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

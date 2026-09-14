@@ -23,7 +23,7 @@
             <p class="mb-2"><i class="fa fa-map-marker-alt mr-3" style="color: #4156a5;"></i>Pj.San Hilarion Alto Mz. B Lote 16 - San Juan de Lurigancho</p>
             <p class="mb-2"><i class="fa fa-envelope mr-3" style="color: #4156a5;"></i> proyectos@stamerica.com.pe</p>
             <p class="mb-0"><i class="fa fa-phone-alt mr-3" style="color: #4156a5;"></i>+51 941 683 636</p>
-            <h6 class="text-secondary text-uppercase mt-4 mb-3">Siguenos en</h6>
+            <p class="h6 text-secondary text-uppercase mt-4 mb-3">Síguenos en</p>
             <div class="d-flex">
                 <a class="redes btn btn-square mr-2" href="https://www.facebook.com/profile.php?id=100090141630434" alt="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="redes btn btn-square" href="https://www.instagram.com/stamerica.oficial/" target="_blank" alt="instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
@@ -32,19 +32,19 @@
         <div class="col-lg-8 col-md-12">
             <div class="row">
                 <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">Menú</h5>
+                    <p class="h5 text-secondary text-uppercase mb-4">Menú</p>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>inicio"><i class="fa fa-check mr-2"></i>Inicio</a>
                         <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>servicios_stamerica"><i class="fa fa-check mr-2"></i>Servicios ST América</a>
                         <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>contactanos_STAmerica"><i class="fa fa-check mr-2"></i>Contáctanos</a>
-                        <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>terminos_condiciones"><i class="fa fa-check mr-2"></i>Terminos y Condiciones</a>
-                        <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>politicas_privacidad"><i class="fa fa-check mr-2"></i>Politicas de Privacidad</a>
+                        <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>terminos_condiciones"><i class="fa fa-check mr-2"></i>Términos y Condiciones</a>
+                        <a class="text-secondary mb-2" href="<?php echo constant('URL'); ?>politicas_privacidad"><i class="fa fa-check mr-2"></i>Políticas de Privacidad</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                 </div>
                 <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">Ubicación</h5>
+                    <p class="h5 text-secondary text-uppercase mb-4">Ubicación</p>
                     <!-- MAPA CORREGIDO CON PIN ROJO -->
                     <iframe
                         src="https://maps.google.com/maps?q=-11.993814,-77.017818&z=18&output=embed"

@@ -2,12 +2,11 @@
 
 class Errores extends Controller{
 
-
 	function __construct(){
 		parent::__construct();
-		$this->view->mensaje = "Hubo un error en la solicitud o no existe la pagina";
+		http_response_code(404);
+		$this->view->mensaje = "Página no encontrada";
 		$this->view->render('errores/index');
-		// echo "<p>Error al cargar el recurso</p>";
 	}
 }
 
