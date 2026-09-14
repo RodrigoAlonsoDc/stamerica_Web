@@ -8,143 +8,394 @@ require 'views/header.php';
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <style>
-    .letra {
-        font-size: 42px;
-        font-family: Teko, sans-serif;
-        font-weight: 700;
+    /* Tipografía y Hero */
+    .hero-section {
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 41, 59, 0.88) 50%, rgba(65, 86, 165, 0.7) 100%), 
+                    url('public/img/Servicios/Electricidad/PORTADA-STAMERICA-sin-texto-2.jpg') center center / cover no-repeat;
+        min-height: 560px;
+        display: flex;
+        align-items: center;
+        padding: 4.5rem 0;
+        position: relative;
+    }
+
+    .hero-title {
+        font-size: 2.6rem;
+        font-weight: 800;
         line-height: 1.2;
+        letter-spacing: -0.5px;
+        color: #ffffff;
+        margin-bottom: 1.25rem;
     }
 
-    .letra2 {
-        font-size: 26px;
-        font-family: Teko, sans-serif !important;
-        font-weight: 900;
-        color: white;
-        letter-spacing: 2px;
+    @media (max-width: 767.98px) {
+        .hero-title {
+            font-size: 1.9rem;
+        }
+        .hero-section {
+            padding: 3rem 0;
+            min-height: auto;
+        }
     }
 
-    .btn-contacto {
-        background-color: #4156a5;
-        color: white;
+    .hero-lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #e2e8f0;
+        margin-bottom: 2rem;
+        max-width: 650px;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 6px 16px;
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-hero-primary {
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        color: #ffffff !important;
+        font-weight: 700;
+        padding: 13px 28px;
+        border-radius: 50px;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1rem;
         border: none;
-        padding: 10px 24px;
-        font-weight: bold;
-        border-radius: 4px;
+        text-decoration: none !important;
     }
 
-    .btn-contacto:hover {
-        background-color: #59e3ff;
-        transition: background-color 0.4s ease, color 0.4s ease;
-        color: white;
+    .btn-hero-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+        color: #ffffff !important;
+    }
+
+    .btn-hero-outline {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        border: 1.5px solid rgba(255, 255, 255, 0.5);
+        color: #ffffff !important;
+        font-weight: 600;
+        padding: 12px 26px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1rem;
+        text-decoration: none !important;
+    }
+
+    .btn-hero-outline:hover {
+        background: #ffffff;
+        color: #1e293b !important;
+        transform: translateY(-2px);
+    }
+
+    /* Trust Card Hero */
+    .hero-trust-box {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        padding: 24px;
+        color: #ffffff;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .trust-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 18px;
+    }
+    .trust-item:last-child {
+        margin-bottom: 0;
+    }
+    .trust-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: rgba(65, 86, 165, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        margin-right: 14px;
+        flex-shrink: 0;
+    }
+
+    /* Tarjetas de Servicio Modernas */
+    .service-card {
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+        background: #ffffff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 35px -5px rgba(15, 23, 42, 0.12) !important;
+    }
+    .service-card-img-wrap {
+        position: relative;
+        overflow: hidden;
+        height: 220px;
+    }
+    .service-card-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+    }
+    .service-card:hover .service-card-img-wrap img {
+        transform: scale(1.08);
+    }
+    .service-card-badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(4px);
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 30px;
+        letter-spacing: 0.5px;
+    }
+
+    .service-mini-card {
+        border-radius: 14px;
+        border: 1px solid #e2e8f0;
+        background: #ffffff;
+        padding: 24px 18px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .service-mini-card:hover {
+        transform: translateY(-6px);
+        border-color: #4156a5;
+        box-shadow: 0 15px 30px -5px rgba(65, 86, 165, 0.15) !important;
+    }
+    .mini-icon-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: #eef2ff;
+        color: #4156a5;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+        transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    }
+    .service-mini-card:hover .mini-icon-circle {
+        transform: scale(1.1);
+        background: #4156a5;
+        color: #ffffff;
     }
 </style>
 
-<div class="container-fluid bg-registration py-5" style="background: url(public/img/Servicios/Electricidad/PORTADA-STAMERICA-sin-texto-2.jpg), no-repeat center center; background-size: cover; padding-bottom: 10rem !important; min-height: 850px;">
-    <div class="container py-5" style="padding-bottom: 0rem !important; padding-top: 3rem !important; font-family: 'Open Sans', sans-serif;">
+<!-- HERO SECTION MODERNA -->
+<section class="hero-section">
+    <div class="container py-4">
         <div class="row align-items-center">
-            <div class="col-lg-8 mb-5" style="padding-top: 15rem;">
-                <div class="mb-4">
-                    <p class="letra2" data-aos="fade-down" data-aos-delay="600" data-aos-duration="900"><b>BIENVENIDOS A ST AMÉRICA</b></p>
-                    <h1 class="letra text-white" data-aos="fade-left" data-aos-duration="900"><span class="text-white">Soluciones Técnicas América: Ingeniería Eléctrica en Media y Alta Tensión</span></h1>
+            <!-- Columna Texto Principal -->
+            <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
+                <div class="hero-badge">
+                    <span class="badge badge-warning text-dark font-weight-bold mr-2"><i class="fas fa-bolt mr-1"></i> INGENIERÍA ELÉCTRICA</span>
+                    <span class="text-white small font-weight-bold">Lima & Todo el Perú</span>
                 </div>
-                <a href="<?php echo constant('URL'); ?>contactanos_STAmerica" class="btn btn-contacto text-white text-decoration-none" data-aos="fade-left" data-aos-delay="900" data-aos-duration="900">
-                    <i class="fa fa-envelope mr-2"></i> Contáctanos
-                </a>
+                
+                <h1 class="hero-title">
+                    Soluciones Técnicas América: <span style="color: #59e3ff;">Ingeniería Eléctrica</span> en Media y Alta Tensión
+                </h1>
+                
+                <p class="hero-lead">
+                    Especialistas en mantenimiento preventivo de subestaciones, tratamiento y filtrado de aceite dieléctrico por termovacío, pozos a tierra con protocolo CIP y montaje electromecánico llave en mano.
+                </p>
+                
+                <div class="d-flex flex-wrap align-items-center pt-2">
+                    <a href="https://api.whatsapp.com/send?phone=51941683636&text=Hola%20ST%20América,%20deseo%20solicitar%20una%20cotización%20técnica" target="_blank" rel="noopener" class="btn btn-hero-primary mr-sm-3 mb-3">
+                        <i class="fab fa-whatsapp mr-2" style="font-size: 1.2rem;"></i> Cotizar por WhatsApp
+                    </a>
+                    <a href="#servicios-destacados" class="btn btn-hero-outline mb-3">
+                        <i class="fas fa-tools mr-2"></i> Conocer Servicios
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-4">
+
+            <!-- Columna Card de Confianza / Garantías -->
+            <div class="col-lg-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="hero-trust-box">
+                    <h3 class="h5 font-weight-bold text-white mb-4 d-flex align-items-center">
+                        <i class="fas fa-shield-alt text-warning mr-2"></i> ¿Por qué elegir ST América?
+                    </h3>
+                    
+                    <div class="trust-item">
+                        <div class="trust-icon text-warning"><i class="fas fa-user-check"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-white">Ingenieros Colegiados CIP</div>
+                            <small class="text-light" style="opacity: 0.85;">Protocolos técnicos válidos ante INDECI, municipalidades y auditorías.</small>
+                        </div>
+                    </div>
+
+                    <div class="trust-item">
+                        <div class="trust-icon" style="color: #59e3ff;"><i class="fas fa-truck-moving"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-white">Planta Móvil de Termovacío</div>
+                            <small class="text-light" style="opacity: 0.85;">Tratamiento in situ de transformadores de potencia sin interrumpir su operación.</small>
+                        </div>
+                    </div>
+
+                    <div class="trust-item">
+                        <div class="trust-icon text-success"><i class="fas fa-clipboard-check"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-white">Equipos Calibrados ASTM / IEEE</div>
+                            <small class="text-light" style="opacity: 0.85;">Megómetros, telurómetros y microohmímetros con certificación de calibración vigente.</small>
+                        </div>
+                    </div>
+
+                    <div class="trust-item">
+                        <div class="trust-icon" style="color: #fbbf24;"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-white">Atención 24/7 y Paradas de Planta</div>
+                            <small class="text-light" style="opacity: 0.85;">Disponibilidad inmediata para emergencias eléctricas y paradas programadas.</small>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- SECCIÓN SERVICIOS DESTACADOS (Enlazando los 7 servicios principales) -->
-<section style="background-color: white;">
-    <div class="container py-5">
-        <div class="row text-center py-3">
-            <div class="col-lg-8 m-auto">
-                <h2 class="h1 font-weight-bold" style="color: #4156a5;" data-aos="fade-up" data-aos-duration="900">Servicios Destacados de Ingeniería Eléctrica</h2>
-                <p class="text-muted">Especialistas en montaje, mantenimiento, pruebas y asesoría técnica en Lima y todo el Perú.</p>
+<section id="servicios-destacados" class="py-5" style="background-color: #f8fafc;">
+    <div class="container py-3">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 m-auto" data-aos="fade-up" data-aos-duration="700">
+                <span class="badge badge-pill badge-primary px-3 py-2 text-uppercase mb-2" style="background-color: #e0e7ff; color: #4156a5; font-weight: 700;">Especialidades Técnicas</span>
+                <h2 class="h2 font-weight-bold text-dark mt-2">Nuestros Servicios de Ingeniería Eléctrica</h2>
+                <p class="text-muted lead" style="font-size: 1.05rem;">Soluciones integrales de alta exigencia para industrias, centros comerciales, minería e infraestructura en todo el Perú.</p>
             </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+
+        <!-- 3 Servicios Principales con Imagen -->
+        <div class="row mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             <!-- 1. Mantenimiento de Subestaciones -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <a href="<?php echo constant('URL'); ?>servicio_mantenimiento_subestaciones_electricas">
-                        <div style="overflow: hidden;">
-                            <img src="public/img/Servicios/PaginaPincipalServicios/Servicios_Generales_Subestaciones.webp" width="100%" height="220" class="card-img-top" alt="Mantenimiento de subestaciones eléctricas en Lima" style="transition: transform 0.5s ease; display: block; object-fit: cover;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" decoding="async">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h3 class="h5"><a href="<?php echo constant('URL'); ?>servicio_mantenimiento_subestaciones_electricas" class="text-decoration-none" style="color: #4156a5;">Mantenimiento de Subestaciones Eléctricas</a></h3>
-                        <p class="card-text text-muted">Mantenimiento preventivo y correctivo en media y alta tensión, transformadores de potencia y pruebas operativas.</p>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 service-card shadow-sm">
+                    <div class="service-card-img-wrap">
+                        <span class="service-card-badge"><i class="fas fa-bolt text-warning mr-1"></i> 10kV - 60kV</span>
+                        <img src="public/img/Servicios/PaginaPincipalServicios/Servicios_Generales_Subestaciones.webp" alt="Mantenimiento de subestaciones eléctricas en Lima" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h3 class="h5 font-weight-bold mb-2">
+                            <a href="<?php echo constant('URL'); ?>servicio_mantenimiento_subestaciones_electricas" class="text-dark text-decoration-none" style="transition: color 0.2s ease;">Mantenimiento de Subestaciones</a>
+                        </h3>
+                        <p class="card-text text-muted small flex-grow-1">Mantenimiento preventivo y correctivo en media y alta tensión, transformadores de potencia, celdas y pruebas operativas.</p>
+                        <a href="<?php echo constant('URL'); ?>servicio_mantenimiento_subestaciones_electricas" class="font-weight-bold text-primary text-decoration-none mt-3 d-inline-flex align-items-center" style="color: #4156a5 !important;">
+                            Conocer servicio <i class="fas fa-arrow-right ml-2" style="font-size: 0.85rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- 2. Proyectos Electromecánicos -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <a href="<?php echo constant('URL'); ?>servicio_diseno_construccion_subestaciones_electricas">
-                        <div style="overflow: hidden;">
-                            <img src="public/img/Servicios/PaginaPincipalServicios/Proyectos_Electromecanicos.webp" width="100%" height="220" class="card-img-top" alt="Montaje de subestaciones y tendido de redes de media tensión" style="transition: transform 0.5s ease; display: block; object-fit: cover;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" decoding="async">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h3 class="h5"><a href="<?php echo constant('URL'); ?>servicio_diseno_construccion_subestaciones_electricas" class="text-decoration-none" style="color: #4156a5;">Proyectos Electromecánicos y Montaje de Subestaciones</a></h3>
-                        <p class="card-text text-muted">Construcción y montaje llave en mano de subestaciones compactas, convencionales y tendido de redes aéreas y subterráneas.</p>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 service-card shadow-sm">
+                    <div class="service-card-img-wrap">
+                        <span class="service-card-badge"><i class="fas fa-network-wired text-info mr-1"></i> Montaje Llave en Mano</span>
+                        <img src="public/img/Servicios/PaginaPincipalServicios/Proyectos_Electromecanicos.webp" alt="Montaje de subestaciones y tendido de redes de media tensión" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h3 class="h5 font-weight-bold mb-2">
+                            <a href="<?php echo constant('URL'); ?>servicio_diseno_construccion_subestaciones_electricas" class="text-dark text-decoration-none">Proyectos Electromecánicos</a>
+                        </h3>
+                        <p class="card-text text-muted small flex-grow-1">Diseño, construcción y montaje de subestaciones compactas y convencionales, tendido de redes aéreas y subterráneas.</p>
+                        <a href="<?php echo constant('URL'); ?>servicio_diseno_construccion_subestaciones_electricas" class="font-weight-bold text-primary text-decoration-none mt-3 d-inline-flex align-items-center" style="color: #4156a5 !important;">
+                            Conocer servicio <i class="fas fa-arrow-right ml-2" style="font-size: 0.85rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- 3. Tratamiento de Aceite Dieléctrico -->
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <a href="<?php echo constant('URL'); ?>servicio_tratamiento_aceite_dielectrico">
-                        <div style="overflow: hidden;">
-                            <img src="public/img/Servicios/PaginaPincipalServicios/Tratamiento_Aceite.webp" width="100%" height="220" class="card-img-top" alt="Termovacío y regeneración de aceite dieléctrico en Perú" style="transition: transform 0.5s ease; display: block; object-fit: cover;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy" decoding="async">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h3 class="h5"><a href="<?php echo constant('URL'); ?>servicio_tratamiento_aceite_dielectrico" class="text-decoration-none" style="color: #4156a5;">Tratamiento de Aceite Dieléctrico y Termovacío</a></h3>
-                        <p class="card-text text-muted">Termovacío móvil in situ, regeneración con tierra fuller y análisis fisicoquímico bajo normas ASTM.</p>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 service-card shadow-sm">
+                    <div class="service-card-img-wrap">
+                        <span class="service-card-badge"><i class="fas fa-oil-can text-warning mr-1"></i> Planta Móvil</span>
+                        <img src="public/img/Servicios/PaginaPincipalServicios/Tratamiento_Aceite.webp" alt="Termovacío y regeneración de aceite dieléctrico en Perú" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h3 class="h5 font-weight-bold mb-2">
+                            <a href="<?php echo constant('URL'); ?>servicio_tratamiento_aceite_dielectrico" class="text-dark text-decoration-none">Tratamiento de Aceite Dieléctrico</a>
+                        </h3>
+                        <p class="card-text text-muted small flex-grow-1">Termovacío móvil in situ, regeneración con tierra fuller, desgasificado y análisis fisicoquímico y cromatográfico ASTM.</p>
+                        <a href="<?php echo constant('URL'); ?>servicio_tratamiento_aceite_dielectrico" class="font-weight-bold text-primary text-decoration-none mt-3 d-inline-flex align-items-center" style="color: #4156a5 !important;">
+                            Conocer servicio <i class="fas fa-arrow-right ml-2" style="font-size: 0.85rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <!-- 4 Servicios Complementarios en Cards de Alto Rendimiento -->
+        <div class="row" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <!-- 4. Pozo a Tierra -->
-            <div class="col-12 col-md-3 col-sm-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm p-3 text-center">
-                    <i class="fas fa-shield-alt fa-3x mb-3" style="color: #4156a5;"></i>
-                    <h3 class="h6 font-weight-bold"><a href="<?php echo constant('URL'); ?>servicio_construccion_mantenimiento_puesta_tierra" class="text-decoration-none text-dark">Pozo a Tierra: Instalación y Certificado</a></h3>
-                    <p class="text-muted small">Medición con telurómetro calibrado y protocolo firmado por ingeniero CIP para INDECI.</p>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="service-mini-card h-100 shadow-sm">
+                    <div class="mini-icon-circle"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="h6 font-weight-bold mb-2">
+                        <a href="<?php echo constant('URL'); ?>servicio_construccion_mantenimiento_puesta_tierra" class="text-dark text-decoration-none">Pozo a Tierra & Certificado</a>
+                    </h3>
+                    <p class="text-muted small mb-3">Medición con telurómetro calibrado y protocolo firmado CIP para INDECI.</p>
+                    <a href="<?php echo constant('URL'); ?>servicio_construccion_mantenimiento_puesta_tierra" class="small font-weight-bold" style="color: #4156a5;">Ver detalles &rarr;</a>
                 </div>
             </div>
 
             <!-- 5. Tableros Eléctricos -->
-            <div class="col-12 col-md-3 col-sm-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm p-3 text-center">
-                    <i class="fas fa-bolt fa-3x mb-3" style="color: #4156a5;"></i>
-                    <h3 class="h6 font-weight-bold"><a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_tableros_electricos" class="text-decoration-none text-dark">Mantenimiento de Tableros Eléctricos</a></h3>
-                    <p class="text-muted small">Montaje, reajuste de barras y termografía infrarroja de tableros generales y de distribución.</p>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="service-mini-card h-100 shadow-sm">
+                    <div class="mini-icon-circle"><i class="fas fa-th-large"></i></div>
+                    <h3 class="h6 font-weight-bold mb-2">
+                        <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_tableros_electricos" class="text-dark text-decoration-none">Tableros Eléctricos</a>
+                    </h3>
+                    <p class="text-muted small mb-3">Mantenimiento, ajuste de barras y termografía infrarroja de tableros de control y fuerza.</p>
+                    <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_tableros_electricos" class="small font-weight-bold" style="color: #4156a5;">Ver detalles &rarr;</a>
                 </div>
             </div>
 
             <!-- 6. Banco de Condensadores -->
-            <div class="col-12 col-md-3 col-sm-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm p-3 text-center">
-                    <i class="fas fa-chart-line fa-3x mb-3" style="color: #4156a5;"></i>
-                    <h3 class="h6 font-weight-bold"><a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_banco_condensadores" class="text-decoration-none text-dark">Banco de Condensadores</a></h3>
-                    <p class="text-muted small">Corrección del factor de potencia para evitar penalizaciones y recargos por energía reactiva.</p>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="service-mini-card h-100 shadow-sm">
+                    <div class="mini-icon-circle"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="h6 font-weight-bold mb-2">
+                        <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_banco_condensadores" class="text-dark text-decoration-none">Banco de Condensadores</a>
+                    </h3>
+                    <p class="text-muted small mb-3">Corrección de factor de potencia para eliminar penalizaciones en la factura eléctrica.</p>
+                    <a href="<?php echo constant('URL'); ?>servicio_instalacion_mantenimiento_banco_condensadores" class="small font-weight-bold" style="color: #4156a5;">Ver detalles &rarr;</a>
                 </div>
             </div>
 
             <!-- 7. Pruebas Eléctricas -->
-            <div class="col-12 col-md-3 col-sm-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm p-3 text-center">
-                    <i class="fas fa-microchip fa-3x mb-3" style="color: #4156a5;"></i>
-                    <h3 class="h6 font-weight-bold"><a href="<?php echo constant('URL'); ?>servicio_analisis_pruebas_electricas" class="text-decoration-none text-dark">Pruebas Eléctricas a Transformadores</a></h3>
-                    <p class="text-muted small">Ensayos de aislamiento (megado), relación de transformación TTR y resistencia de devanados.</p>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="service-mini-card h-100 shadow-sm">
+                    <div class="mini-icon-circle"><i class="fas fa-vial"></i></div>
+                    <h3 class="h6 font-weight-bold mb-2">
+                        <a href="<?php echo constant('URL'); ?>servicio_analisis_pruebas_electricas" class="text-dark text-decoration-none">Pruebas a Transformadores</a>
+                    </h3>
+                    <p class="text-muted small mb-3">Ensayos de aislamiento (megado), relación de transformación TTR y devanados.</p>
+                    <a href="<?php echo constant('URL'); ?>servicio_analisis_pruebas_electricas" class="small font-weight-bold" style="color: #4156a5;">Ver detalles &rarr;</a>
                 </div>
             </div>
         </div>
@@ -225,8 +476,6 @@ require 'views/header.php';
     </div>
 </div>
 
-<?php require 'views/footer.php'; ?>
-
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -253,3 +502,5 @@ require 'views/header.php';
         document.addEventListener("DOMContentLoaded", updateCounter);
     }
 </script>
+
+<?php require 'views/footer.php'; ?>

@@ -89,3 +89,5 @@
 <script src="public/js/jqBootstrapValidation.min.js"></script>
 <script src="public/js/button.js"></script>
 <script src="public/js/formulario.js"></script>
+</body>
+</html>
