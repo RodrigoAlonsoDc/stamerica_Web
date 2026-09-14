@@ -297,7 +297,7 @@
             z-index: 1040;
         }
         .header-logo {
-            max-height: 52px;
+            max-height: 72px;
             width: auto;
             transition: transform 0.2s ease;
         }
@@ -419,7 +419,7 @@
                 border: 1px solid #f1f5f9 !important;
             }
             .header-logo {
-                max-height: 44px;
+                max-height: 56px;
             }
         }
     </style>
