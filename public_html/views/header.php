@@ -297,7 +297,7 @@
             z-index: 1040;
         }
         .header-logo {
-            max-height: 72px;
+            max-height: 92px;
             width: auto;
             transition: transform 0.2s ease;
         }
